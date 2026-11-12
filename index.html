@@ -248,94 +248,183 @@
         دي التولز والخدمات اللي هنبني بيها المشروع، وحاطط لك المقارنات عشان تعرف إزاي نوفر عليك كل مليم شهرياً:
       </p>
 
-      <!-- Comparison 1: Hosting & Server -->
-      <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
+      <!-- Comparison 1: Hosting & Server (Columns at Top, Comparison Underneath) -->
+      <div class="space-y-3">
         <div class="flex items-center justify-between">
           <span class="font-bold text-slate-900 flex items-center gap-2 text-sm">
             <i data-lucide="server" class="w-4 h-4 text-orange-600"></i>
-            أولاً: السيرفر والاستضافة (الباك إند وقاعدة البيانات)
+            أولاً: مقارنة خيارات السيرفر والاستضافة (الباك إند وقاعدة البيانات)
           </span>
           <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">أوفر وأريح حل</span>
         </div>
         
-        <div class="overflow-x-auto">
-          <table class="w-full text-xs text-right border-collapse bg-white rounded-xl overflow-hidden border border-slate-200">
-            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
-              <tr>
-                <th class="p-2.5">الخيار</th>
-                <th class="p-2.5">المميزات</th>
-                <th class="p-2.5">العيوب</th>
-                <th class="p-2.5">رأينا وتوصيتنا</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100">
-              <tr class="bg-orange-50/50">
-                <td class="p-2.5 font-bold text-orange-950 flex items-center gap-1.5">
+        <!-- 3 Columns Comparison Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          
+          <!-- Column 1: Our Managed VPS (Recommended) -->
+          <div class="p-5 bg-orange-50/50 border-2 border-orange-500 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between relative">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-1 border-b border-orange-200 pb-2.5">
+                <div class="font-black text-slate-900 text-sm flex items-center gap-1.5">
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-600 shrink-0"></i>
-                  نهوست لك على سيرفر الـ VPS بتاع شركتنا
-                </td>
-                <td class="p-2.5 text-slate-700">سيرفر VPS سريع ومخصص، إحنا اللي بنعملك الصيانة ومتابعة السيرفر 24 ساعة، وبناخد نسخ احتياطي يومي تلقائي، وتجديد شهادة الأمان SSL علينا، وبتدفع اشتراك شهري رمزي بسيط ومخفض بالجنيه بدون وجع دماغ الكروت الدولية.</td>
-                <td class="p-2.5 text-slate-500">بيكون ضمن سيرفرات شركتنا لكن في مساحة ونظام معزول ومحمي ليك تماماً.</td>
-                <td class="p-2.5 font-bold text-orange-700">⭐⭐⭐ الموصى به: هيريح دماغك تماماً ويوفر فلوسك في البداية</td>
-              </tr>
-              <tr>
-                <td class="p-2.5 font-bold text-slate-800">تشتري سيرفر VPS خاص بيك (Hetzner أو DigitalOcean)</td>
-                <td class="p-2.5 text-slate-700">سيرفر باسمك وحسابك 100%.</td>
-                <td class="p-2.5 text-slate-500">هتحتاج فيزا بتدفع دولي كل شهر، وتتابع فواتيره وتجديداته بنفسك.</td>
-                <td class="p-2.5 text-slate-700">متاح لو إنت حابب يكون ليك حساب مستقل تماماً من أول يوم</td>
-              </tr>
-              <tr class="bg-slate-50/50">
-                <td class="p-2.5 font-bold text-slate-800">الاستضافات العادية الرخيصة (Shared Hosting)</td>
-                <td class="p-2.5 text-slate-700">رخيصة في الأول.</td>
-                <td class="p-2.5 text-red-600 font-semibold">بتقع مع أول 20 مستخدم يعملوا بحث وفلترة في العقارات، ومبتستحملش إشعارات الموبايل.</td>
-                <td class="p-2.5 text-red-600 font-bold">❌ مينفعش نستخدمها نهائي لمشروع زي ده</td>
-              </tr>
-            </tbody>
-          </table>
+                  سيرفر شركتنا المدار (VPS)
+                </div>
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-orange-600 text-white shrink-0">الموصى به ⭐</span>
+              </div>
+              
+              <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-orange-800">💡 الفكرة وطريقة الشغل:</span>
+                  بنستضيف النظام على سيرفر VPS مخصص وسريع بتاع شركتنا، وإحنا اللي بنتولى إدارته بالكامل.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-emerald-800">✅ المميزات والدعم:</span>
+                  صيانة ومراقبة 24 ساعة، نسخ احتياطي يومي تلقائي، وتجديد شهادة الأمان SSL وحماية السيرفر علينا بدون ما تشيل هم.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-blue-800">💵 طريقة الدفع:</span>
+                  اشتراك شهري رمزي مخفض بالجنيه المصري محلياً، وبدون وجع دماغ البطاقات الدولية.
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2.5 border-t border-orange-200 text-[11px] font-bold text-orange-950 bg-white/70 p-2 rounded-lg">
+              🎯 الخلاصة: أوفر حل هيريح دماغك تماماً في بداية المشروع.
+            </div>
+          </div>
+
+          <!-- Column 2: Independent VPS -->
+          <div class="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-1 border-b border-slate-200 pb-2.5">
+                <div class="font-bold text-slate-900 text-sm">
+                  سيرفر خاص باسمك (VPS)
+                </div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">استقلالية تامة</span>
+              </div>
+              
+              <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-slate-700">💡 الفكرة وطريقة الشغل:</span>
+                  بنشتري لك سيرفر VPS سحابي مستقل (زي Hetzner أو DigitalOcean) مسجل باسمك وحسابك.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-emerald-800">✅ المميزات والدعم:</span>
+                  السيرفر وموارده ملكك بالكامل وتحت إدارتك المباشرة.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-amber-800">⚠️ العيوب والمصاريف:</span>
+                  بيحتاج بطاقة دفع دولية بالدولار شهرياً، ومتابعة مستمرة للفواتير والتجديدات.
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2.5 border-t border-slate-200 text-[11px] font-bold text-slate-700 bg-slate-50 p-2 rounded-lg">
+              🎯 الخلاصة: خيار متاح وممتاز لو حابب حساب مستقل باسمك من أول يوم.
+            </div>
+          </div>
+
+          <!-- Column 3: Shared Hosting (Warning) -->
+          <div class="p-5 bg-slate-50 border border-slate-200 rounded-2xl space-y-3 flex flex-col justify-between opacity-80">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-1 border-b border-slate-200 pb-2.5">
+                <div class="font-bold text-slate-800 text-sm">
+                  الاستضافات العادية (Shared)
+                </div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-700">غير مناسبة ❌</span>
+              </div>
+              
+              <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-slate-700">💡 الفكرة وطريقة الشغل:</span>
+                  الاستضافات المشتركة الرخيصة زي اللي بتتباع للمواقع الصغيرة أو المدونات.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-red-700">❌ العيوب القاتلة:</span>
+                  سيرفر ضعيف وبطيء جداً، بيسقط مع أول 20 مستخدم يعملوا بحث وفلترة في العقارات، ومبيستحملش إشعارات الموبايل.
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2.5 border-t border-slate-200 text-[11px] font-bold text-red-700 bg-red-50 p-2 rounded-lg">
+              🎯 الخلاصة: مينفعش نعتمد عليها نهائياً لمنظومة عقارات احترافية.
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- Comparison 2: Media Storage -->
-      <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl space-y-3">
+      <!-- Comparison 2: Media Storage (Columns at Top, Comparison Underneath) -->
+      <div class="space-y-3">
         <div class="flex items-center justify-between">
           <span class="font-bold text-slate-900 flex items-center gap-2 text-sm">
             <i data-lucide="hard-drive" class="w-4 h-4 text-orange-600"></i>
-            ثانياً: تخزين صور وفيديوهات العقارات (Cloudflare R2 vs AWS S3)
+            ثانياً: مقارنة تخزين صور وفيديوهات العقارات (Cloudflare R2 vs AWS S3)
           </span>
           <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">توفير كبير في الباندويث</span>
         </div>
 
-        <div class="overflow-x-auto">
-          <table class="w-full text-xs text-right border-collapse bg-white rounded-xl overflow-hidden border border-slate-200">
-            <thead class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200">
-              <tr>
-                <th class="p-2.5">الخدمة</th>
-                <th class="p-2.5">المصاريف الشهرية</th>
-                <th class="p-2.5">رسوم فتح وتحميل الصور (Bandwidth)</th>
-                <th class="p-2.5">رأينا وتوصيتنا</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100">
-              <tr class="bg-orange-50/50">
-                <td class="p-2.5 font-bold text-orange-950 flex items-center gap-1.5">
+        <!-- 2 Columns Comparison Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <!-- Column 1: Cloudflare R2 (Recommended) -->
+          <div class="p-5 bg-orange-50/50 border-2 border-orange-500 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-1 border-b border-orange-200 pb-2.5">
+                <div class="font-black text-slate-900 text-sm flex items-center gap-1.5">
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-600 shrink-0"></i>
-                  Cloudflare R2 (الموصى به)
-                </td>
-                <td class="p-2.5 font-bold text-emerald-700">أول 10 جيجا مجاناً تماماً، وبعدها قروش بسيطة جداً لكل جيجا.</td>
-                <td class="p-2.5 font-bold text-emerald-700">صفر جنيه (مجاني للأبد مبيحاسبكش على التحميل)</td>
-                <td class="p-2.5 font-bold text-orange-700">⭐⭐⭐ ده اللي هنعتمد عليه عشان ميكلفكش أي فواتير مفاجئة</td>
-              </tr>
-              <tr>
-                <td class="p-2.5 font-bold text-slate-800">Amazon AWS S3</td>
-                <td class="p-2.5 text-slate-700">بتدفع تمن التخزين بالدولار.</td>
-                <td class="p-2.5 text-red-600 font-semibold">بياخد فلوس على كل جيجا صور الزباين بتفتحه من الأبليكيشن!</td>
-                <td class="p-2.5 text-red-600 font-semibold">⚠️ مش مناسب؛ الفواتير هتكون غالية مع زيادة مستخدمي التطبيق</td>
-              </tr>
-            </tbody>
-          </table>
+                  Cloudflare R2 Storage
+                </div>
+                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-orange-600 text-white shrink-0">الموصى به لتوفير الفلوس ⭐</span>
+              </div>
+              
+              <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-orange-800">💵 تكلفة التخزين:</span>
+                  أول 10 جيجابايت مجاناً تماماً مدى الحياة، وبعدها قروش بسيطة جداً لكل جيجا إضافي.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-emerald-800">🚀 رسوم سحب وتحميل الصور (Bandwidth):</span>
+                  <strong>صفر جنيه مجاناً للأبد!</strong> مبيحاسبكش على أي باندويث مهما الزباين فتحت صور وفيديوهات.
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2.5 border-t border-orange-200 text-[11px] font-bold text-orange-950 bg-white/70 p-2 rounded-lg">
+              🎯 الخلاصة: ده الخيار المنقذ لميزانية التطبيق عشان ميجيلكش فواتير مفاجئة.
+            </div>
+          </div>
+
+          <!-- Column 2: AWS S3 -->
+          <div class="p-5 bg-white border border-slate-200 rounded-2xl shadow-sm space-y-3 flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between gap-1 border-b border-slate-200 pb-2.5">
+                <div class="font-bold text-slate-900 text-sm">
+                  Amazon AWS S3
+                </div>
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">مكلف في الباندويث ⚠️</span>
+              </div>
+              
+              <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-slate-700">💵 تكلفة التخزين:</span>
+                  بتدفع تمن التخزين بالدولار شهرياً.
+                </div>
+                <div>
+                  <span class="font-bold text-slate-900 block text-[11px] text-red-700">⚠️ رسوم سحب وتحميل الصور (Bandwidth):</span>
+                  بياخد فلوس بالدولار على كل جيجابايت صور الزباين بتفتحه من الموبايل (Egress Fee)!
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2.5 border-t border-slate-200 text-[11px] font-bold text-red-700 bg-slate-50 p-2 rounded-lg">
+              🎯 الخلاصة: كل ما عدد المستخدمين يزيد، الفاتورة هتكبر بالدولار بدون داعٍ.
+            </div>
+          </div>
+
         </div>
       </div>
-
+      
       <!-- Comparison 3: Remaining Services -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
         
