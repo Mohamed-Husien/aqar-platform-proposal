@@ -86,8 +86,8 @@
 <body class="py-6 sm:py-12 px-3 sm:px-6 select-none" oncontextmenu="return false;" oncopy="return false;" oncut="return false;" ondragstart="return false;">
 
   <!-- Global Fixed Watermark (Always visibly centered across all pages while scrolling) -->
-  <div class="fixed inset-0 flex items-center justify-center pointer-events-none select-none z-30">
-    <img src="assets/watermark.png" alt="LogicCraft Watermark" class="w-[360px] h-[360px] sm:w-[540px] sm:h-[540px] object-contain opacity-[0.065] contrast-125">
+  <div class="fixed inset-0 flex items-center justify-center pointer-events-none select-none z-10 overflow-hidden">
+    <img src="assets/watermark.png" alt="LogicCraft Watermark" class="w-[280px] sm:w-[440px] object-contain opacity-[0.035] mix-blend-multiply">
   </div>
 
   <!-- Floating Action Bar (Top Left) -->
@@ -101,7 +101,7 @@
   </div>
 
   <!-- Document Paper Container (Word Paper Sheet Style) -->
-  <main class="word-sheet relative overflow-hidden max-w-4xl mx-auto p-6 sm:p-14 rounded-2xl space-y-10">
+  <main class="word-sheet relative overflow-hidden max-w-4xl mx-auto p-4 sm:p-8 md:p-12 rounded-2xl space-y-10">
 
     <!-- Document Header / Letterhead -->
     <header class="relative z-10 border-b-2 border-slate-900 pb-6 space-y-4">
@@ -136,18 +136,6 @@
       <div class="pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600">
         <div><strong>إعداد المهندس:</strong> م. محمد حسين — <span class="font-latin font-bold text-slate-900">LogicCraft</span> (استشاري تطوير التطبيقات والحلول السحابية)</div>
         <div><strong>واتساب مباشر:</strong> <bdi dir="ltr" class="bidi-isolate font-latin text-slate-900 font-bold inline-block">+20 127 556 6392</bdi></div>
-      </div>
-
-      <!-- Live Online Proposal Link Banner -->
-      <div class="mt-3 p-3 bg-orange-50 border border-orange-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-orange-950">
-        <div class="flex items-center gap-2">
-          <i data-lucide="globe" class="w-4 h-4 text-orange-600 shrink-0"></i>
-          <span><strong>لينك الصفحة دي أونلاين:</strong> تقدر تفتحها أو تبعتها لأي حد من فريقك في أي وقت من هنا:</span>
-        </div>
-        <a href="https://mohamed-husien.github.io/aqar-platform-proposal/" target="_blank" class="font-latin font-bold text-orange-700 hover:text-orange-900 underline flex items-center gap-1 shrink-0" dir="ltr">
-          https://mohamed-husien.github.io/aqar-platform-proposal/
-          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-        </a>
       </div>
     </header>
 
@@ -269,7 +257,7 @@
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-600 shrink-0"></i>
                   سيرفر شركتنا المدار (VPS)
                 </div>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-orange-600 text-white shrink-0">الموصى به ⭐</span>
+                <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-orange-600 text-white shrink-0 whitespace-nowrap inline-flex items-center">الموصى به ⭐</span>
               </div>
               
               <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
@@ -300,7 +288,7 @@
                 <div class="font-bold text-slate-900 text-sm">
                   سيرفر خاص باسمك (VPS)
                 </div>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">استقلالية تامة</span>
+                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 shrink-0 whitespace-nowrap inline-flex items-center">استقلالية تامة</span>
               </div>
               
               <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
@@ -331,7 +319,7 @@
                 <div class="font-bold text-slate-800 text-sm">
                   الاستضافات العادية (Shared)
                 </div>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-700">غير مناسبة ❌</span>
+                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-red-100 text-red-700 shrink-0 whitespace-nowrap inline-flex items-center">غير مناسبة ❌</span>
               </div>
               
               <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
@@ -375,7 +363,7 @@
                   <i data-lucide="check-circle-2" class="w-4 h-4 text-orange-600 shrink-0"></i>
                   Cloudflare R2 Storage
                 </div>
-                <span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-orange-600 text-white shrink-0">الموصى به لتوفير الفلوس ⭐</span>
+                <span class="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-orange-600 text-white shrink-0 whitespace-nowrap inline-flex items-center">الموصى به لتوفير الفلوس ⭐</span>
               </div>
               
               <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
@@ -402,7 +390,7 @@
                 <div class="font-bold text-slate-900 text-sm">
                   Amazon AWS S3
                 </div>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">مكلف في الباندويث ⚠️</span>
+                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 shrink-0 whitespace-nowrap inline-flex items-center">مكلف في الباندويث ⚠️</span>
               </div>
               
               <div class="space-y-2 text-xs text-slate-700 leading-relaxed">
